@@ -1,0 +1,15 @@
+<h1 class="mb2">Hubble</h1>
+
+
+<a ng-if="!connected" ng-href="{{ authUrl }}">Connect to Github</a>
+
+<div ng-if="connected">
+
+  <ul class="list">
+    <li class="mb1"><a ng-href="{{ me.login }}" class="h2 bold">{{ me.login }}</a></li>
+    <li class="mb1"><a href="stars" class="h2 bold">Starred</a></li>
+    <li class="mb1"><a ng-href="{{ me.login }}/following" class="h2 bold">Following</a></li>
+  </ul>
+
+</div>
+

@@ -1,0 +1,15 @@
+<div class="bold mb2">
+  <a href=".">Hubble</a>
+  /
+
+  <a ng-if="stars" href="stars">Stars</a>
+  <a ng-if="userPermalink" ng-href="{{ userPermalink }}">{{ userPermalink }}</a>
+  
+  <span ng-if="followings">/
+    <a ng-href="{{ userPermalink }}/following">Following</a>
+  </span>
+
+  <span ng-if="repoPermalink">/
+    <a ng-href="{{ userPermalink }}/{{ repoPermalink }}">{{ repoPermalink }}</a>
+  </span>
+</div>

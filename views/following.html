@@ -1,0 +1,10 @@
+
+<div ng-include src="'partials/_breadcrumb.html'"></div>
+
+<h1 class="mb2">Following</h1>
+
+<ul class="list">
+  <li ng-repeat="following in followings" class="bold mb1">
+    <a ng-href="{{ following.login }}">{{ following.login }}</a>
+  </li>
+</ul>

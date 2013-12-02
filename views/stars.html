@@ -1,0 +1,13 @@
+
+<div ng-include src="'partials/_breadcrumb.html'"></div>
+
+<h1 class="mb2">Starred Repositories</h1>
+
+<ul class="list">
+  <li ng-repeat="star in stars" class="mb1">
+    <a ng-href="{{ star.owner.login }}/{{ star.name }}">
+      <h1>{{ star.name }}</h1>
+      <p>{{ star.description }}</p>
+    </a>
+  </li>
+</ul>
